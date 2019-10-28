@@ -47,7 +47,7 @@ header span {
 
 img.left {float: left;}
 
-.Navbar {
+Nav {
     color: #999;
     display: flex;
     align-items: column;
@@ -61,14 +61,14 @@ img.left {float: left;}
     
     
     }
-.Navbar__Items{
+    Nav__Items{
         display:none;
         
     }
-.Navbar__ToggleShow{
+    Nav__ToggleShow{
       display: flex;
     }
-.Navbar__Link-toggle {
+    Nav__Link-toggle {
         display:flex;
       align-self: flex-end;
       display: initial;
