@@ -48,7 +48,7 @@ header span {
 img.left {float: left;}
 
 Nav {
-    color: #999;
+    color: #fff;
     display: flex;
     align-items: column;
     z-index: 2;
@@ -61,14 +61,14 @@ Nav {
     
     
     }
-    Nav__Items{
+Nav__Items{
         display:none;
         
     }
-    Nav__ToggleShow{
+Nav__ToggleShow{
       display: flex;
     }
-    Nav__Link-toggle {
+Nav__Link-toggle {
         display:flex;
       align-self: flex-end;
       display: initial;
@@ -118,9 +118,9 @@ section ul {
  
   
   #slider-frame {
-    border: 1px solid var(--lavlt);
+    border: 1px #000;
     border-radius: 1px;
-    box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 5px #fff;
     position: relative;
   }
   
@@ -158,7 +158,7 @@ section ul {
   }
   
   #slider-frame {
-    background: #333;
+    background: #F6F6F6;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -192,7 +192,7 @@ section ul {
     position:fixed;
     top:0;
     left:0;
-    background-color: #333333;
+    background-color: none;
   }
   #backdrop.open{
     display: block;
