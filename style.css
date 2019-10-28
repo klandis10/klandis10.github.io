@@ -47,19 +47,35 @@ header span {
 
 img.left {float: left;}
 
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
+.Navbar {
+    color: #999;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
-
+    align-items: column;
+    z-index: 2;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
     background: #333;
-}
+    height: 3rem;
+    
+    
+    }
+.Navbar__Items{
+        display:none;
+        
+    }
+.Navbar__ToggleShow{
+      display: flex;
+    }
+.Navbar__Link-toggle {
+        display:flex;
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      
+    }
 
 nav a {
     padding: .53em 2em;
@@ -81,16 +97,110 @@ section > p {
     margin: 1em 0;
 }
 
+
+  
+
 section ul {
     padding-left: 1.5em;
     list-style-type: circle;
 }
 
-#work {
+#myWork {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
 }
+
+#slider ::selection {
+    color: inherit;
+    background: transparent;
+  }
+ 
+  
+  #slider-frame {
+    border: 1px solid var(--lavlt);
+    border-radius: 1px;
+    box-shadow: 0 0 5px #333;
+    position: relative;
+  }
+  
+  #slider-prev,
+  #slider-next {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 1em;
+    color: #610551;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0 0 2px #000;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #slider-prev:hover,
+  #slider-next:hover {
+    background:#999;
+  }
+  
+  #slider-prev {
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #slider-next {
+    right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  #slider-frame {
+    background: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  #slider-frame [data-src] {
+    display: none;
+  }
+  
+  #slider-caption {
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    transition: 0.5s;
+    width: 15rem;
+  }
+  
+  #slider-caption.flash {
+    transition: 0s;
+    background: #fff;
+  }
+  #backdrop{
+    display: none;
+    height: 100vw;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: #333333;
+  }
+  #backdrop.open{
+    display: block;
+  }
+  #modal{
+    margin: 3em;
+
+  }
 
 
 footer {

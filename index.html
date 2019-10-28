@@ -2,18 +2,36 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kelley Landis Portfolio</title>
-
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#aboutMe">About</a>
-            <a href="#contactMe">Contact</a>
-            <a href="#myWork">Projects</a>
+    <div class="Navbar">
+        <div class="Navbar__Link Navbar__Link-brand">
+            Java Developer
+        </div>
+        <div class="Navbar__Link-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="Navbar__Items">
+
+            <div class="Navbar__Link">
+                <a href="#aboutMe">About</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#myWork">Projects</a>
+            </div>
+            <div class="Navbar__Link">
+                <a href="#contactMe">Contact</a>
+            </div>
         </nav>
+    </div>
+    <header>
+
         <h1>Kelley Landis Portfolio</h1>
         <p>The name's Kelley, like the island I don't own. I'm a cat-loving Gryffindor with an interest in design and
             Java.<br>
@@ -23,9 +41,9 @@
     <main>
         <section id="aboutMe">
             <h2>ABOUT ME</h2>
-            <img src="C:\Users\WeCanCodeIT\wcci\code\klandis10.github.io\images\Me3.png" alt="Me" width="300"
-                height="325" class="left"><br>
-            <p>Hi! I'm Kelley. I love to create new content, design, video edit, and dabble in any new
+            <br>
+            <p><img src="./images/Me3.png" alt="Me" width="300" height="325" class="left">
+                Hi! I'm Kelley. I love to create new content, design, video edit, and dabble in any new
                 technology. My interests are far and wide, so I love to learn new things.</p>
             <p>I started adulthood with a goal to become the next JK Rowling. A four-year BA Degree and two
                 Customer
@@ -52,41 +70,50 @@
         <section id="myWork">
             <h2>My Work</h2>
 
-            <div id="work">
-                <article>
-                    <h3>Reviews</h3>
-                    <a href="https://github.com/klandis10/reviews.git">
-                        <img src="images\reviewSS.png" width=50%>
-                    </a>
-                    <p>A full stack webpage with video game reviews.</p>
-                    <p>Created using Eclipse, VSCode, Java, HTML, CSS, MVC
-                    </p>
-                </article>
-                <article>
-                    <h3>Virtual Animals Amok</h3>
-                    <a href="https://github.com/klandis10/virtual-animals-amok.git">
-                        <img src="images\amokSS.png" width=50%>
-                    </a>
-                    <p>virtual pet app to take care of wolves, cats, and robots.</p>
-                    <p>Created using Eclipse & Java.</p>
-                </article>
-                <article>
-                    <h3>Youtube Icon</h3>
-                    <img src="images\twenty200 Icon.png" width=50%>
-                    <p>An icon I created in Adobe Photoshop CC 2015</p>
-                </article>
-                <article>
-                    <h3>Youtube Banner</h3>
-                    <img src="images\twenty200 Banner.png" width=50%>
-                    <p>A banner created in Adobe Photoshop CC 2015</p>
-                </article>
+            <div id="slider">
+                <div id="slider-frame">
+
+                    <div id="slider-prev">PREV</div>
+                    <div id="slider-next">NEXT</div>
+
+                    <div id="slider-images">
+                        <div data-src=images\reviewSS.png>
+                            <a href="https://github.com/klandis10/reviews.git"></a>
+                            <button>Show Description</button>
+                            <p>A full stack webpage with video game reviews.
+                                Created using Eclipse, VSCode, Java, HTML, CSS, MVC</p>
+                        </div>
+                        <div data-src="images\amokSS.png">
+                            <a href="https://github.com/klandis10/virtual-animals-amok.git"></a>
+                            <button>Show Description</button>
+                            <p>Virtual Animals Amok App to take care of wolves, cats, and robots. Created using Eclipse
+                                &
+                                Java</p>
+                        </div>
+                        <div data-src="images\twenty200 Icon.png">
+                            <button>Show Description</button>
+                            <p>An icon I designed for a friend's podcast group. Adobe Photoshop.</p>
+                        </div>
+                        <div data-src="images\twenty200 Banner.png">
+                            <button>Show Description</button>
+                            <p>A Banner created for a friend's podcast group. Adobe Photoshop.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="slider-caption">
+                    My Work.
+                </div>
             </div>
+            <article>
+                <h3>Reviews</h3>
+                <a href="https://github.com/klandis10/reviews.git">
+                    <img src="images\reviewSS.png" width=50%>
+                </a>
+
+                </p>
+                </div>
 
         </section>
-
-
-
-
 
     </main>
     <footer>
