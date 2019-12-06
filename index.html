@@ -10,9 +10,17 @@
 </head>
 
 <body>
+
+    <header id="top">
+
+        <h1>Kelley Landis</h1>
+        <p id="disc">The name's Kelley, like the island I don't own. I'm a cat-loving Gryffindor with an interest in
+            design and
+            software development.</p>
+    </header>
+
     <div class="Navbar">
         <div class="Navbar__Link Navbar__Link-brand">
-            Java Developer
         </div>
         <div class="Navbar__Link-toggle">
             <i class="fas fa-bars"></i>
@@ -25,50 +33,98 @@
             <div class="Navbar__Link">
                 <a href="#myWork">Projects</a>
             </div>
-            <div class="Navbar__Link">
+            <div class="topNavRight">
                 <a href="#contactMe">Contact</a>
+            </div>
+            <div class="navTitle">
+                <h3>SOFTWARE DEVELOPER</h3>
+            </div>
+            <div class="topNavRight">
+                <a href="#top">&#8593;</a>
             </div>
         </nav>
     </div>
-    <header>
 
-        <h1>Kelley Landis Portfolio</h1>
-        <p>The name's Kelley, like the island I don't own. I'm a cat-loving Gryffindor with an interest in design and
-            Java.<br>
-            Welcome to my Portfolio!<br></p>
-    </header>
 
     <main>
         <section id="aboutMe">
-            <h2>ABOUT ME</h2>
-            <br>
-            <p><img src="./images/Me3.png" alt="Me" width="300" height="325" class="left">
-                Hi! I'm Kelley. I love to create new content, design, video edit, and dabble in any new
-                technology. My interests are far and wide, so I love to learn new things.</p>
-            <p>I started adulthood with a goal to become the next JK Rowling. A four-year BA Degree and two
-                Customer
-                Service positions later, I think it's safe to say my career plans didn't exactly pan out (one
-                day!). I have always been interested in computers, tinkering with website CSS/html, graphic design,
-                and
-                video editing. I decided to turn these hobbies into a career and enrolled in WeCanCodeIT. I am
-                currently
-                working towards a career in coding.</p>
-            <br><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <div class="row">
+                            <div class="column1">
+                                <div class="slideshow-container">
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">1 / 4</div>
+                                        <img src="8407_396708970427057_973388323_n.jpg" style="width:100%">
+                                    </div>
 
-            <p><b>SKILLS</b></p>
-            <p>Adobe Creative Suite | Java | Spring | MVC | CSS | Flexbox | Relational Databases | Source Control/Git
-                <p>
-        </section>
-        <section id="contactMe">
-            <h2>Contact Me!</h2>
-            <p>EMAIL: Kelley.Landis@outlook.com</p>
-            <p>PHONE: 937-212-4871</p>
-            <p>LINKEDIN: in/kelley-landis-2a326890</p>
-            <p>GITHUB: klandis10 </p>
-        </section>
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="images\Me-ReSize.jpg" style="width:100%">
+                                    </div>
 
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="Ollie&Bay.jpg" style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="numbertext">4 / 4</div>
+                                        <img src="images\Erin&I.jpg" style="width:100%">
+                                    </div>
+
+
+
+                                    <br>
+
+                                    <div style="text-align:center">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="column2">
+                            <h2>ABOUT ME</h2>
+                            I started adulthood with a goal to become the next JK Rowling. A four-year BA Degree and two
+                            Customer Service positions later, I think it's safe to say my career plans didn't exactly
+                            pan
+                            out
+                            (one
+                            day!). I have always been interested in computers, tinkering with website CSS/html, graphic
+                            design,
+                            and video editing. I decided to turn these hobbies into a career and enrolled in
+                            WeCanCodeIT. I
+                            am
+                            currently working towards a career in coding.
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <p style="color: #E14658"><b>SKILLS</b></p>
+            <p>Adobe Creative Suite | Java | JavaScript | Spring | MVC | CSS | HTML | Flexbox | Relational Databases |
+                Git
+                <p><br>
+        </section>
         <section id="myWork">
-            <h2>My Work</h2>
+            <h1>MY WORK</h1>
+            <div class="flex-container">
+                <img src="images\reviewSS.png" alt="Avatar" class="image">
+                <a href="https://github.com/klandis10/reviews.git"></a>
+                <div class="overlay">
+                    <div class="projectTitle">Video Game Review Project</div>
+                </div>
+            </div>
+            <div><img src="images\twenty200 Icon.png"></div>
+            <div></div>
+            </div>
 
             <div id="slider">
                 <div id="slider-frame">
@@ -86,7 +142,9 @@
                         <div data-src="images\amokSS.png">
                             <a href="https://github.com/klandis10/virtual-animals-amok.git"></a>
                             <button>Show Description</button>
-                            <p>Virtual Animals Amok App to take care of wolves, cats, and robots. Created using Eclipse
+                            <p>Virtual Animals Amok App to take care of wolves, cats, and robots.
+                                Created using
+                                Eclipse
                                 &
                                 Java</p>
                         </div>
@@ -104,10 +162,40 @@
                     My Work.
                 </div>
             </div>
+            <section id="contactMe">
+                <h2>Contact Me!</h2>
+                <p>EMAIL: Kelley.Landis@outlook.com</p>
+                <p>PHONE: 937-212-4871</p>
+                <p>LINKEDIN: in/kelley-landis-2a326890</p>
+                <p>GITHUB: klandis10 </p>
 
+
+            </section>
         </section>
 
     </main>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+
     <footer>
         &copy; 2019 Kelley Landis
     </footer>
