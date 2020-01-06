@@ -13,7 +13,7 @@ html {
 }
 
 body{
-  background-image: linear-gradient( #C0B3A0, #22252c);
+  background-image: linear-gradient( #907890, #0F1020);
 }
 
 section {
@@ -39,19 +39,19 @@ section {
     text-align: left;
     color: #fff;
     text-shadow: -1px 0 black;
-    background-color:#22252c;
+    background-color: #0F1020;
 }
 
 #contactMe {
   color: #fff;
   text-shadow: -1px 0 black;
-  background-image: linear-gradient(#22252c, #282a30);
+  background-image: linear-gradient(#252131, #0F1020);
   float: center;
 }
 
 #myWork {
   padding: 0;
-  background-image: linear-gradient (#7c766e, #22252c);
+  background-image: linear-gradient (#7c766e, #0F1020);
   
 }
 
@@ -80,7 +80,7 @@ section {
 
 /* Content */
 .content {
-  background-image: linear-gradient (#7c766e, #22252c);
+  background-image: linear-gradient (#C6BAC6, #0F1020);
   text-decoration: none;
   color:#fff;
   padding: 10px;
@@ -107,33 +107,33 @@ header {
 }
 
 header h2{
-  color:#22252c;
+  color:#0F1020;
 }
 header h3{
-  color:#22252c;
+  color:#0F1020;
 }
 
 header h4{
-  color:#22252c;
+  color:#0F1020;
 }
 header h5{
-  color:#22252c;
+  color:#0F1020;
 }
 header h6{
-  color:#22252c;
+  color:#0F1020;
 }
 
 h1 {
     text-shadow: 2px 2px #E14658;
     font-size: 3em;
     text-align: center;
-    color: #22252c; 
+    color: #0F1020; 
 }
 
 h2 {
     text-align: center;
     color: #E14658;
-    text-shadow: 1.5px 1.5px #C0B3A0;
+    text-shadow: 1.5px 1.5px #C6BAC6;
 }
 
 header span {
@@ -144,7 +144,7 @@ header span {
 footer {
   margin-top: 2em;
   margin-bottom: 1em;
-  color: #7c766e;
+  color: #C6BAC6;
   font-style: bold;
   padding: 1em 0;
   text-align: center;
@@ -160,7 +160,7 @@ Nav {
     top:0;
     left:0;
     width: 100vw;
-    background: #22252c;
+    background: #0F1020;
     height: 3rem;
     
     }
